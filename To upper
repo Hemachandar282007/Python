@@ -1,0 +1,14 @@
+def to_uppercase(input_string):
+    result_string = input_string.upper()
+    return result_string
+
+input_string = input("Enter a string:")
+upper_string = to_uppercase(input_string) 
+print("Upper String:",upper_string)
+
+
+
+Output: 
+Enter a string: hello
+Lower String: HELLO
+
