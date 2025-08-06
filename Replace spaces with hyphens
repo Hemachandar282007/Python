@@ -1,0 +1,19 @@
+def replace_spaces_with_hyphens(input_string):
+    result_string = input_string.replace(" ","-")
+    return result_string
+
+input_string = input("Enter a string:")
+result_string = replace_spaces_with_hyphens (input_string)
+print("Strong with spaces replaced by hyphens:",result_string)
+
+
+
+
+Output:
+Enter a string:
+
+        Welcome To The World Of Python Program 
+
+Strong with spaces replaced by hyphens:
+
+        Welcome-To-The-World-Of-Python-Program-
