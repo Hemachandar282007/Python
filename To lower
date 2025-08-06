@@ -1,0 +1,14 @@
+def to_lowercase(input_string):
+    result_string = input_string.lower()
+    return result_string
+
+input_string = input("Enter a string:")
+lower_string = to_lowercase(input_string) 
+print("Lower String:",lower_string)
+
+
+
+Output: 
+Enter a string:HELLO
+Lower String: hello
+
