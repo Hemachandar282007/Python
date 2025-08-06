@@ -1,0 +1,18 @@
+def is_palindrome(input_string):
+    
+    cleaned_string = ''.join(char.lower() for char in input_string if char.isalnum())
+
+  
+    if cleaned_string == cleaned_string[::-1]:
+        print("The string is a palindrome")
+    else:
+        print("The string is not a palindrome")
+
+input_string = input("Enter a string: ")
+is_palindrome(input_string)
+
+
+
+Output:
+Enter a string: MOM
+The string is a palindrome
