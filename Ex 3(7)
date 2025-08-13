@@ -1,0 +1,18 @@
+set1 = {10,20,30}
+set2 = {10,20,30,40,50}
+
+is_subset = set1.issubset(set2)
+
+is_superset = set2.issuperset(set1)
+
+print("Set 1:",set1)
+print("Set 2:",set2)
+print("Is Set 1 is a subset of Set 2 ?:",is_subset)
+print("Is Set 2 is a superset of Set 1 ?:",is_superset)
+
+
+Output:
+Set 1: {10, 20, 30}
+Set 2: {50, 20, 40, 10, 30}
+Is Set 1 is a subset of Set 2 ?: True
+Is Set 2 is a superset of Set 1 ?: True
