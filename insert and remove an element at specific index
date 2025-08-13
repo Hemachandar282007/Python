@@ -1,0 +1,22 @@
+my_list = [10,20,30,40,50]
+
+index_to_insert = 3
+
+element_to_insert = 45
+
+my_list.insert(index_to_insert,element_to_insert)
+
+print("List after insertion:",my_list)
+
+index_to_remove = 4
+removed_element = my_list.pop(index_to_remove)
+
+print("List After Removal:",my_list)
+print("Removed Element:",removed_element )
+
+
+output:
+
+List after insertion: [10, 20, 30, 45, 40, 50]
+List After Removal: [10, 20, 30, 45, 50]
+Removed Element: 40
