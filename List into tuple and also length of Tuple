@@ -1,0 +1,15 @@
+my_list = [10,20,30,40]
+
+my_tuple = tuple(my_list)
+
+length_of_tuple = len(my_tuple)
+
+print("Converted Tuple:",my_tuple)
+print("Length of Tuple:",length_of_tuple)
+
+
+
+output:
+Converted Tuple: (10, 20, 30, 40)
+Length of Tuple: 4
+
