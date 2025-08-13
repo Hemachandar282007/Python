@@ -1,0 +1,8 @@
+list_of_tuples = [('h',1),('e',2),('m',3),('u',4)]
+
+dict = dict(list_of_tuples)
+
+print("Dictionary:",dict)
+
+Output:
+Dictionary: {'h': 1, 'e': 2, 'm': 3, 'u': 4}
