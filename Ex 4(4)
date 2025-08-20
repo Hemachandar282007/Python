@@ -1,0 +1,39 @@
+import pandas as pd
+
+data1 = {
+    'Name':['Clark','Wally','Doom'],
+    'Age': [30,20,50]
+    }
+df1 = pd.DataFrame(data1)
+
+data2 = {
+    'Name':['Hemu','Hari','Gopal'],
+    'Age': [20,25,30]
+    }
+df2 = pd.DataFrame(data2)
+
+concatenated_df1 = pd.concat([df1,df2],axis = 0)
+
+print("Vertical Concatenated DataFrame:")
+print(concatenated_df1)
+
+concatenated_df2 = pd.concat([df1,df2],axis = 1)
+
+print("Horizontal Concatenated DataFrame:")
+print(concatenated_df2)
+
+
+Output:
+Vertical Concatenated DataFrame:
+    Name  Age
+0  Clark   30
+1  Wally   20
+2   Doom   50
+0   Hemu   20
+1   Hari   25
+2  Gopal   30
+Horizontal Concatenated DataFrame:
+    Name  Age   Name  Age
+0  Clark   30   Hemu   20
+1  Wally   20   Hari   25
+2   Doom   50  Gopal   30
