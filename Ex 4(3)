@@ -1,0 +1,23 @@
+import pandas as pd
+
+sales = pd.DataFrame({
+    'Region':['North','South','East','West'],
+    'Sales': [2000,3000,1500,1800]
+    })
+
+regions = pd.DataFrame({
+    'Region':['North','South','East','West'],
+    'Manager':['Hemu','Hari','Gopal','Rakul'],
+    })
+regions.set_index('Region',inplace = True)
+
+result = sales.join(regions, on ='Region')
+
+print(result)
+
+Output:
+  Region  Sales Manager
+0  North   2000    Hemu
+1  South   3000    Hari
+2   East   1500   Gopal
+3   West   1800   Rakul
